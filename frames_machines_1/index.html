@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canvas Image Carousel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="carousel" aria-label="Image carousel">
+    <div class="carousel-frame">
+      <button class="nav-button prev" aria-label="Previous slide">&#10094;</button>
+
+      <img
+        id="carouselImage"
+        src="images/slide1.jpg"
+        alt="Slide 1"
+        draggable="false"
+      />
+
+      <button class="nav-button next" aria-label="Next slide">&#10095;</button>
+    </div>
+
+    <div class="dots" id="dots" aria-label="Slide navigation"></div>
+  </main>
+
+  <script>
+    const slides = [
+      { src: "images/slide1.jpg", alt: "Slide 1" },
+      { src: "images/slide2.jpg", alt: "Slide 2" },
+      { src: "images/slide3.jpg", alt: "Slide 3" },
+      { src: "images/slide4.jpg", alt: "Slide 4" },
+	  { src: "images/slide5.jpg", alt: "Slide 5" },
+      { src: "images/slide6.jpg", alt: "Slide 6" }
+	  
+    ];
+
+    let currentSlide = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const carouselImage = document.getElementById("carouselImage");
+    const dotsContainer = document.getElementById("dots");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+
+    function showSlide(index) {
+      currentSlide = (index + slides.length) % slides.length;
+      carouselImage.src = slides[currentSlide].src;
+      carouselImage.alt = slides[currentSlide].alt;
+
+      document.querySelectorAll(".dot").forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentSlide);
+        dot.setAttribute("aria-current", i === currentSlide ? "true" : "false");
+      });
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    slides.forEach((_, index) => {
+      const dot = document.createElement("button");
+      dot.className = "dot";
+      dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+      dot.addEventListener("click", () => showSlide(index));
+      dotsContainer.appendChild(dot);
+    });
+
+    prevButton.addEventListener("click", prevSlide);
+    nextButton.addEventListener("click", nextSlide);
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") nextSlide();
+      if (event.key === "ArrowLeft") prevSlide();
+    });
+
+    carouselImage.addEventListener("touchstart", (event) => {
+      touchStartX = event.changedTouches[0].screenX;
+    });
+
+    carouselImage.addEventListener("touchend", (event) => {
+      touchEndX = event.changedTouches[0].screenX;
+      const swipeDistance = touchEndX - touchStartX;
+
+      if (Math.abs(swipeDistance) > 40) {
+        swipeDistance < 0 ? nextSlide() : prevSlide();
+      }
+    });
+
+    showSlide(currentSlide);
+  </script>
+</body>
+</html>
