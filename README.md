@@ -8,12 +8,13 @@ Here are some tips if you are attempting to access these flipbooks
      - The carousel can also be embedded in another website or LMS page by using an iframe. For example:  `<p><iframe style="border: medium none currentcolor;" src="https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/" width="100%" height="700" loading="lazy"></iframe></p>`
 ## Duplicating Flipbooks: 
 Here are some tips if you are attempting to duplicate a carousel to deploy on GitHub Pages:
-1. The index.html and styles.css files must be located in the root directory
-2. The images, using the default names of slide1.jpg, slide2.jpg, etc are located in the images folder
+1. First, you'll need to clone either this full repository or just one of the carousel folders https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository. After you have your own cloned copy, you can add it to your own GitHub repository.
+2. Now lets take a tour of the file structure. The index.html and styles.css files must be located in the root directory
+3. The images, using the default names of slide1.jpg, slide2.jpg, etc are located in the `images` folder
      - Images can be created in any software. @drdanteaches likes using Affinity Designer v2, which has been replaced by the new version Affinity by Canva https://www.affinity.studio/
      - In Affinity by Canva, you can set up individual artboards for each image and then export them all at once using the Slice Studio https://www.affinity.studio/help/artboards-artboards-export/
-3. Any source documents, like a .svg or the Affinity Designer (.afdesign) can be placed in the source folder. The website does not use these files; they are simply a backup in case others want to make edits.
-4. Once you've built your website as index.html, you can deploy your site via GitHub Pages. This website walks you through the process https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+4. Any source documents, like a .svg or the Affinity Designer (.afdesign) can be placed in the source folder. The website does not use these files; they are simply a backup in case others want to make edits.
+5. Once you've built your website as index.html, you can deploy your site via GitHub Pages. This help page walks you through the process https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
      - The GitHub pages will be located at `https://USERNAME.github.io/REPOSITORY/FOLDER/` (for example: `https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/` )
      - The carousel can also be embedded in another website or LMS page by using an iframe. For example:  `<p><iframe style="border: medium none currentcolor;" src="https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/" width="100%" height="700" loading="lazy"></iframe></p>`
 
