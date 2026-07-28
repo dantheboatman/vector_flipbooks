@@ -4,8 +4,8 @@ This is a folder of image carousels (flipbooks) to help students learn Statics, 
 Here are some tips if you are attempting to access these flipbooks 
 1. The easiest way to use these flipbooks is to go to Seeing.Engineering and find the flipbook and all supporting documentation.
 2. If you would like to access the flipbooks directly  
-     The GitHub pages will be located at https://USERNAME.github.io/REPOSITORY/FOLDER/ (for example: https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/ )  
-     The carousel can also be embedded in another website or LMS page by using an iframe. For example: <p><iframe style="border: medium none currentcolor;" src="https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/" width="100%" height="700" loading="lazy"></iframe></p>3. 
+     - The GitHub pages will be located at https://USERNAME.github.io/REPOSITORY/FOLDER/ (for example: https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/ )  
+     - The carousel can also be embedded in another website or LMS page by using an iframe. For example: <p><iframe style="border: medium none currentcolor;" src="https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/" width="100%" height="700" loading="lazy"></iframe></p>3. 
 
 ## Duplicating Flipbooks: 
 Here are some tips if you are attempting to duplicate a carousel to deploy on GitHub Pages:
