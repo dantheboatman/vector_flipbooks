@@ -20,5 +20,5 @@ Here are some tips if you are attempting to duplicate a flipbook to deploy on Gi
      - The GitHub pages will be located at `https://USERNAME.github.io/REPOSITORY/FOLDER/` (for example: `https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/` )
      - The flipbook can also be embedded in another website or LMS page by using an iframe. For example:  `<p><iframe style="border: medium none currentcolor;" src="https://dantheboatman.github.io/vector_flipbooks/frames_machines_1/" width="100%" height="700" loading="lazy"></iframe></p>`
 
-**AI Use Statement:** @drdanteaches used ChatGPT to help him code index.html and styles.css. Additionally, Dall-E within ChatGPT was used to help produce the images in the slides.
+**AI Use Statement:** @drdanteaches used ChatGPT to help him code index.html and styles.css.
 Last updated: 2026.07.28
