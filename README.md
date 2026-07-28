@@ -10,7 +10,7 @@ Here are some tips if you are attempting to access these flipbooks
 Here are some tips if you are attempting to duplicate a carousel to deploy on GitHub Pages:
 1. The index.html and styles.css files must be located in the root directory
 2. The images, using the default names of slide1.jpg, slide2.jpg, etc are located in the images folder
-     - Images can be created in any software. @drdanteaches likes using Affinity Designer v2, which has been replaced by the new version Affinity by Canva
+     - Images can be created in any software. @drdanteaches likes using Affinity Designer v2, which has been replaced by the new version Affinity by Canva https://www.affinity.studio/
      - In Affinity by Canva, you can set up individual artboards for each image and then export them all at once using the Slice Studio https://www.affinity.studio/help/artboards-artboards-export/
 3. Any source documents, like a .svg or the Affinity Designer (.afdesign) can be placed in the source folder. The website does not use these files; they are simply a backup in case others want to make edits.
 4. Once you've built your website as index.html, you can deploy your site via GitHub Pages. This website walks you through the process https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
