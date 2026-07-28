@@ -1,5 +1,5 @@
-# Welcome to @drdanteaches Flipbook Repository, which is part of Seeing.Engineering
-This is a folder of image carousels (flipbooks) to help students learn Statics, Dynamics, or Mechanics of Materials. 
+# Welcome to @drdanteaches Flipbook Repository
+This is a folder of image carousels (flipbooks) to help students learn Statics, Dynamics, or Mechanics of Materials. This work is part of a much larger U.S. Department of Education-funded project housed at Seeing.Engineering. 
 ## Using Flipbooks 
 Here are some tips if you are attempting to access these flipbooks 
 1. The easiest way to use these flipbooks is to go to Seeing.Engineering and find the flipbook and all supporting documentation.
